@@ -1,5 +1,5 @@
 {
-  "name": "prefetch",
+  "name": "@isogon/prefetch",
   "version": "0.1.0",
   "description": "It allows you to do async actions before rendering the view.",
   "main": "lib/index.js",
