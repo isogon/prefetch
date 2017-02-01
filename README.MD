@@ -1,7 +1,7 @@
 Prefetch for React Router and Redux
 ============
-[![npm version](https://img.shields.io/npm/v/redux-prefetcher.svg?style=flat-square)](https://www.npmjs.com/package/prefetcher)
-[![Build Status](https://travis-ci.org/isogon/prefetcher.svg?branch=master)](https://travis-ci.org/isogon/prefetcher)
+[![npm version](https://img.shields.io/npm/v/@isogon/prefetch.svg?style=flat-square)](https://www.npmjs.com/package/prefetch)
+[![Build Status](https://travis-ci.org/isogon/prefetch.svg?branch=master)](https://travis-ci.org/isogon/prefetch)
 
 Decorator and provider for handling async actions before route rendering in React.
 
