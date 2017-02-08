@@ -1,12 +1,12 @@
 Prefetch for React Router and Redux
 ============
-[![npm version](https://img.shields.io/npm/v/@isogon/prefetch.svg?style=flat-square)](https://www.npmjs.com/package/prefetch)
+[![npm version](https://img.shields.io/npm/v/@isogon/prefetch.svg?style=flat-square)](https://www.npmjs.com/package/@isogon/prefetch)
 [![Build Status](https://travis-ci.org/isogon/prefetch.svg?branch=master)](https://travis-ci.org/isogon/prefetch)
 
 Decorator and provider for handling async actions before route rendering in React.
 
 ```
-yarn install prefetch
+yarn add @isogon/prefetch
 ```
 
 ## Notice
@@ -21,7 +21,7 @@ Prefetch is designed to work in combination with [redux](https://github.com/reac
 ### Setup
 
 ```js
-import { Prefetcher }  from 'redux-prefetcher';
+import { Prefetcher }  from '@isogon/prefetch';
 ```
 
 All you have to do is render `Router` with Prefetcher middleware
@@ -54,7 +54,7 @@ Create an action and prefetch will dispatch them for you. Prefetch will dispatch
 
 ```js
 import { connect } from 'react-redux';
-import { prefetch } from 'redux-prefetcher';
+import { prefetch } from '@isogon/prefetch';
 
 @prefetch(() => ({
   type: 'GET_LUNCH',
@@ -103,7 +103,7 @@ Ideally you want to do all this asynchronous stuff on the server and preload all
 ```js
 import { renderToString } from 'react-dom/server'
 import { match, RoutingContext } from 'react-router'
-import { Prefetcher, prefetchData } from 'redux-prefetcher';
+import { Prefetcher, prefetchData } from '@isogon/prefetch';
 import { Provider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
 import serialize from 'serialize-javascript';
@@ -189,4 +189,4 @@ const render = applyRouterMiddleware(...middleware);
 
 
 ## Collaboration
-You're welcome to PR, and we appreciate any questions or issues, please [open an issue](https://github.com/isogon/redux-prefetcher/issues)!
+You're welcome to PR, and we appreciate any questions or issues, please [open an issue](https://github.com/isogon/prefetch/issues)!
